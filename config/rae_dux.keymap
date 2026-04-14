@@ -47,22 +47,7 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
 ZMK_UNICODE_SINGLE(sym_precedes, N2, N2, N7, A)
 ZMK_UNICODE_SINGLE(sym_succeeds, N2, N2, N7, B)
 
-/ {
-    macros {
-        ZMK_MACRO(scope, wait-ms = <1>; tap-ms = <1>; bindings = <&kp COLON &kp COLON>;)
-        ZMK_MACRO(keyword, wait-ms = <1>; tap-ms = <1>; bindings = <&kp HASH &kp COLON>;)
-        ZMK_MACRO(site_link, wait-ms = <20>; tap-ms = <20>; bindings = <&kp LC(L) &kp LC(C) &kp LG(TAB) &kp LC(V)>;)
-        ZMK_MACRO(site_link_cut, wait-ms = <20>; tap-ms = <20>; bindings = <&kp LC(L) &kp LC(C) &kp LC(W) &kp LG(TAB) &kp LC(V)>;)
-        ZMK_MACRO(ret_swap, wait-ms = <20>; tap-ms = <20>; bindings = <&kp RET &kp LG(TAB)>;)
-        ZMK_MACRO(term_paste, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LC(LS(V))>;)
-        ZMK_MACRO(obs_connect, wait-ms = <1>; tap-ms = <1>; bindings = <&kp MINUS &kp LT &kp GT &kp MINUS &kp SPC>;)
-        ZMK_MACRO(obs_connect_new, wait-ms = <1>; tap-ms = <1>; bindings = <&sym_precedes &sym_succeeds>;)
-        ZMK_MACRO(obs_link, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LBKT &kp LBKT>;)
-        ZMK_MACRO(md_hrule, wait-ms = <1>; tap-ms = <1>; bindings = <&kp MINUS &kp MINUS &kp MINUS>;)
-        ZMK_MACRO(aliases, wait-ms = <1>; tap-ms = <1>; bindings = <&kp A &kp L &kp I &kp A &kp S &kp E &kp S &kp COLON>;)
-    };
-
-    combos {
+/ combos {
         compatible = "zmk,combos";
 
         #define COMBO(NAME, BINDINGS, KEYPOS, TIMEOUT) \
