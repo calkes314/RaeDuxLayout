@@ -1,5 +1,5 @@
 # rae-dux
-Endgame wireless split ergo keeb with low-profile switches and keycaps
+Endgame wireless split ergo keeb with low-profile switches and keycaps 
 
 Built with the help of [this guide](https://www.tzcl.me/posts/rae-dux) and [this guide](https://hackaday.io/project/187234-rae-dux-keyboard-build).
 
